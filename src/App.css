@@ -1,38 +1,279 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans;
+}
+
+tr,td{
+  border: solid 1px black;
+  font-weight: bold;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-header{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  min-height: 10vh;
+  background-color:#354259;
+}
+.container-header img{
+   margin-left: 2rem;
+   max-height: 4rem;
+   min-width: 5rem;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-header nav{
+  margin-right: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
+.container-header a{
+  color: white!important;
+  margin-right: 1.5rem;
+}
+
+.nav-container{
+  width: 100%;
+  min-height: 15vh;
+  background-color: #6002EE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 4rem;
+
+}
+
+.nav-container h2{
+  margin: 0 auto;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+.nav-home-back a{
+  font-size: 2.2rem;
+  margin-left: 2rem; 
+}
+.nav-home a{
+font-size: 2.2rem;
+margin-right: 2rem; 
+}
+
+.main-container {
+  width: 100%;
   min-height: 100vh;
+  background-color: #2299FF;
+  background-color: #ffffff;
+  background-color: #330033;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.footer-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+}
+.footer-container div{
+   margin-top: 0.5rem;
+}
+.footer-container i{
+  font-size: 2.5rem;
+  margin-left: 0.2rem;
+}
+.footer-container h3{
+  margin: 0;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.table-container{
+  width: 95%;
+  height: 100%;
+  margin: 12em auto;
+  background-color: #BB86FC;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  outline: 2px solid #BB86FC;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-container2{
+  width: 95%;
+  height: 100%;
+  margin: 1rem auto;
+  background-color: #BB86FC;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  outline: 2px solid #BB86FC;
+  
 }
+
+.table-container table{
+  margin-top: 0.8rem;
+}
+.table-container th,td{
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+.table-container2 table{
+  margin-top: 0.8rem;
+}
+.table-container2 th,td{
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.form-container{
+   width: 25%;
+   margin: 4em auto;
+   height:100%;
+   border: 3px solid #BB86FC;
+}
+.form-container label{
+
+  color:#ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+ 
+}
+.form-container input{
+  width: 70%;
+  margin: 0.8em auto;
+  border: 3px solid #BB86FC;
+  
+}
+
+.form-container button{
+  font-size: 1.3rem;
+}
+
+.button{
+ display: flex;
+ justify-content:center;
+ margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 320px) and (max-width:514px){
+
+  .container-header{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items:center;
+      text-align: center;
+    }
+    .container-header img{
+       display: none;
+       
+    }
+    .navbar{
+        width: 100%;
+    }
+    
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin:0;
+    }
+    .container-fluid a{
+        width: 100%;
+        border: 1px solid white;
+    }
+
+   .nav-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+   }
+
+   .table-container{
+    width: 100%;
+    height: 100%;
+    margin: 12em auto;
+    background-color: #BB86FC;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    outline: 2px solid #BB86FC;
+    
+  }
+
+  .table-container table{
+    margin-top: 0.8rem;
+  }
+  .table-container th,td{
+   
+    font-size: 0.8rem;
+  }
+
+  .table-container2{
+    width: 100%;
+    height: 100%;
+    margin: 1rem auto;
+    background-color: #BB86FC;
+
+    outline: 2px solid #BB86FC;
+    
+  }
+  .table-container2 .table-dark{
+    font-size: 0.8rem!important;
+  }
+
+  .table-container2 table{
+    margin: 0 auto;
+  
+  }
+  .table-container2 th,td{
+   
+    font-size: 0.8rem;
+  }
+
+ 
+ 
+  
+ }
+
+ @media screen and (min-width: 320px) and (max-width:975px){
+ 
+  .form-container{
+    width: 65%;
+    margin: 4em auto;
+    height:100%;
+    border: 3px solid #BB86FC;
+ }
+ .form-container label{
+ 
+   color:#ffffff;
+   font-weight: bold;
+   font-size: 1.1rem;
+   margin-left: 1rem;
+   margin-top: 1rem;
+  
+ }
+ .form-container input{
+   width: 80%;
+   margin: 0.8em auto;
+   border: 3px solid #BB86FC;
+   
+ }
+ 
+ .form-container button{
+   font-size: 1.3rem;
+ }
+ 
+ .button{
+  display: flex;
+  justify-content:center;
+  margin-top: 1.5rem;
+ }
+ }
